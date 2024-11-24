@@ -1,0 +1,232 @@
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Tăng kích thước chữ cho tiêu đề */
+    }
+
+    .status p {
+        font-size: 1.8em; /* Tăng thêm kích thước chữ cho trạng thái */
+    }
+
+    .control button {
+        padding: 20px; /* Tăng khoảng đệm thêm */
+        font-size: 1.4em; /* Tăng kích thước chữ trong nút */
+    }
+
+    .overview .card {
+        font-size: 1.3em; /* Tăng kích thước chữ trong phần tổng quan */
+    }
+}
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.status p {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.control button {
+    width: 45%;
+    margin: 10px 2.5%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.control button.open {
+    background-color: #28a745;
+}
+
+.control button.open:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.control button.close {
+    background-color: #dc3545;
+}
+
+.control button.close:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.status-occupied {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.status-free {
+    color: #198754;
+    font-weight: bold;
+}
+
+.overview {
+    margin-top: 30px;
+}
+
+.overview .card {
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+/* Kiểu chữ và màu sắc tổng thể */
+/* Kiểu chữ và màu sắc tổng thể */
+.navbar {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff7f7f; /* Màu hồng nhạt */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: #ff4c4c; /* Màu hồng đậm hơn khi cuộn */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color:  #007bff;
+    transition: color 0.3s ease-in-out;
+    padding-left: 30px; /* Thay đổi giá trị này để căn lề sang phải */
+}
+
+
+/* Hiệu ứng hover cho các link */
+.nav-link {
+    color: #333;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Hiệu ứng cho nút đăng nhập và đăng xuất */
+#login-link .nav-link, #logout.nav-link {
+    padding: 8px 20px;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#login-link .nav-link:hover, #logout.nav-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Kiểu cho phần chào hỏi người dùng */
+#user-info .navbar-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Hiệu ứng nút chuyển đổi (toggle button) */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Animation khi hiển thị phần tử */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#user-info {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/* Media queries cho thiết bị di động */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 2em; /* Tăng kích thước chữ cho tiêu đề */
+        margin-bottom: 25px;
+    }
+
+    .status p {
+        font-size: 1.5em; /* Tăng kích thước chữ cho trạng thái */
+        margin: 20px 0;
+    }
+
+    .control button {
+        width: 100%;
+        margin: 8px 0;
+        padding: 18px; /* Tăng khoảng đệm cho nút */
+        font-size: 1.3em; /* Tăng kích thước chữ trong nút */
+    }
+
+    .footer {
+        font-size: 1em; /* Tăng kích thước chữ ở footer */
+        margin-top: 20px;
+    }
+
+    .overview .card {
+        margin-bottom: 25px;
+        font-size: 1.2em; /* Tăng kích thước chữ trong phần tổng quan */
+    }
+
+    /* Điều chỉnh navbar cho di động */
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.4rem 1rem;
+    }
+
+    .navbar .nav-link {
+        padding: 12px 0;
+        font-size: 1.1em; /* Tăng kích thước chữ cho link */
+    }
+
+    /* Kiểu dáng cho phần chào hỏi */
+    #user-info .navbar-text {
+        font-size: 1rem; /* Tăng kích thước chữ phần chào hỏi */
+    }
+}
